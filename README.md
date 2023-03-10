@@ -39,7 +39,7 @@ In 'orient_dis.m' and 'orient_con.m', the inputs and outputs are the same, shown
 
 function [DAG] = orient_dis(G,dataset,clients)    /    function [DAG] = orient_con(G,dataset,clients)
 
-INPUT :
+INPUT:
 
     G is the skeleton of DAG
     
@@ -57,7 +57,7 @@ OUTPUT:
 
 function [partition] = random_partition(data_samples,clients)
 
-INPUT :
+INPUT:
 
   data_samples is the number of all data samples 
   
@@ -73,7 +73,7 @@ OUTPUT:
 
 function [fed_ske,fed_sep] = layer_federate(ske_set,sep_set,clients,ratio)
 
-INPUT :
+INPUT:
 
   ske_set is the data matrix set learning from clients
   
@@ -95,7 +95,7 @@ OUTPUT:
 
 function [maxsep]  = max_p(x,y,candidate,dataset,clients)
 
-INPUT :
+INPUT:
 
     x,y is 2 nodes
     
@@ -111,7 +111,7 @@ OUTPUT:
 
 function [minsep]  = min_r(x,y,candidate,dataset,clients)
 
-INPUT :
+INPUT:
 
     x,y is 2 nodes
     
