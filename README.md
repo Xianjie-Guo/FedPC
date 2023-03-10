@@ -59,13 +59,13 @@ function [partition] = random_partition(data_samples,clients)
 
 INPUT:
 
-  data_samples is the number of all data samples 
+    data_samples is the number of all data samples 
   
-  clients is the number of clients
+    clients is the number of clients
   
 OUTPUT:
 
-  partition is the distribution of data samples on clients 
+    partition is the distribution of data samples on clients 
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -75,19 +75,19 @@ function [fed_ske,fed_sep] = layer_federate(ske_set,sep_set,clients,ratio)
 
 INPUT:
 
-  ske_set is the data matrix set learning from clients
+    ske_set is the data matrix set learning from clients
   
-  sep_set is the separation set learning from clients
+    sep_set is the separation set learning from clients
   
-  clients is the number of clients
+    clients is the number of clients
   
-  ratio is the voting ratio to determine edges
+    ratio is the voting ratio to determine edges
   
 OUTPUT:
 
-  fed_ske is DAG after voting
+    fed_ske is DAG after voting
   
-  fed_sep is the union of nodes in separation sets 
+    fed_sep is the union of nodes in separation sets 
 
 -------------------------------------------------------------------------------------------------------------------
 
