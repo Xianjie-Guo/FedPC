@@ -15,21 +15,21 @@ function [DAG,sep] = layer_dis(data,alpha,G,sep,ord)    /    function [DAG,sep] 
 
 INPUT:
 
-      data is the data matrix
+    data is the data matrix
       
-      alpha is the significance level
+    alpha is the significance level
       
-      G is the learned skeleton; for the first time, fully connected matrix
+    G is the learned skeleton; for the first time, fully connected matrix
       
-      sep is the seperation set
+    sep is the seperation set
       
-      ord is the length of the seperation set
+    ord is the length of the seperation set
       
 OUTPUT:
 
-      DAG is uncomplete DAG under the length of seperation set
+    DAG is uncomplete DAG under the length of seperation set
       
-      sep is seperation set identified
+    sep is seperation set identified
 
 -------------------------------------------------------------------------------------------------------------------
 
