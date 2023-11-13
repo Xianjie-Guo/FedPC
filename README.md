@@ -3,7 +3,7 @@ Towards Privacy-Aware Causal Structure Learning in Federated Setting
 
 Usage
 ==========
-"FedPC_discrete.m" (for discrete datasets) and "FedPC_continues" (for continues datasets) are two main scripts.
+"FedPC_discrete.m" (for discrete datasets) and "FedPC_continues" (for continuous datasets) are two main scripts.
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -19,21 +19,21 @@ INPUT:
       
     alpha is the significance level
       
-    G is the learned skeleton; for the first time, fully connected matrix
+    G is the learned skeleton; for the first time, a fully connected matrix
       
-    sep is the seperation set
+    sep is the separation set
       
-    ord is the length of the seperation set
+    ord is the length of the separation set
       
 OUTPUT:
 
-    DAG is uncomplete DAG under the length of seperation set
+    DAG is incomplete DAG under the length of separation set
       
-    sep is seperation set identified
+    sep is the separation set identified
 
 -------------------------------------------------------------------------------------------------------------------
 
-'orient_dis.m'(for discrete datasets) and 'orient_con.m' (for continues datasets) is to orient edges.
+'orient_dis.m'(for discrete datasets) and 'orient_con.m' (for continuous datasets) are to orient edges.
 
 In 'orient_dis.m' and 'orient_con.m', the inputs and outputs are the same, shown below:
 
@@ -69,7 +69,7 @@ OUTPUT:
 
 -------------------------------------------------------------------------------------------------------------------
 
-'layer_federate.m' is the process federating parameters at server.
+'layer_federate.m' is the process federating parameters at the server.
 
 function [fed_ske,fed_sep] = layer_federate(ske_set,sep_set,clients,ratio)
 
@@ -81,7 +81,7 @@ INPUT:
   
     clients is the number of clients
   
-    ratio is the voting ratio to determine edges
+    ratio is the voting ratio to determine the edges
   
 OUTPUT:
 
@@ -91,7 +91,7 @@ OUTPUT:
 
 -------------------------------------------------------------------------------------------------------------------
 
-'max_p.m' and 'min_r.m' is to find out the seperation set with max p-value.
+'max_p.m' and 'min_r.m' is to find out the separation set with max p-value.
 
 function [maxsep]  = max_p(x,y,candidate,dataset,clients)
 
@@ -127,4 +127,4 @@ OUTPUT:
 
 References
 ==========
-[1] Huang J, Yu K, Guo X, et al. Towards Privacy-Aware Causal Structure Learning in Federated Setting[J]. arXiv preprint arXiv:2211.06919, 2022.
+[1] Huang J, Guo X, Yu K, et al. Towards Privacy-Aware Causal Structure Learning in Federated Setting[J]. IEEE Transactions on Big Data, 2023.
