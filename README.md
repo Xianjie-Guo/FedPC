@@ -5,6 +5,8 @@ Usage
 ==========
 "FedPC_discrete.m" (for discrete datasets) and "FedPC_continues" (for continuous datasets) are two main scripts.
 
+Note that the current code has only been debugged on Matlab (2018a) with a 64-bit Windows system.
+
 -------------------------------------------------------------------------------------------------------------------
 
 'layer_dis.m'(for discrete datasets) and 'layer_con.m'(for continues datasets) is implemented for the layer-wise strategy.
